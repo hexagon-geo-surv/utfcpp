@@ -5,6 +5,7 @@ project (utf8cpp
          DESCRIPTION "C++ portable library for working with utf-8 encoding")
 
 add_library(${PROJECT_NAME} INTERFACE)
+add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
 include(GNUInstallDirs)
 
